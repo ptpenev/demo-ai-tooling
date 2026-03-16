@@ -3,6 +3,7 @@
 namespace App\Modules\Leaves\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Modules\Audit\Services\Auditor;
 use App\Modules\Leaves\Models\LeaveRequest;
 use App\Modules\Leaves\Models\LeaveType;
 use App\Modules\Leaves\Resources\LeaveRequestResource;
@@ -14,10 +15,12 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 class LeaveRequestController extends Controller
 {
     protected LeaveBalanceService $balanceService;
+    protected Auditor $auditor;
 
-    public function __construct(LeaveBalanceService $balanceService)
+    public function __construct(LeaveBalanceService $balanceService, Auditor $auditor)
     {
         $this->balanceService = $balanceService;
+        $this->auditor = $auditor;
     }
 
     public function index(Request $request): AnonymousResourceCollection
@@ -85,5 +88,45 @@ class LeaveRequestController extends Controller
             'year' => $year,
             'remaining_days' => $remaining
         ]);
+    }
+
+    public function approve(Request $request, LeaveRequest $leaveRequest)
+    {
+        $this->authorize('approve', $leaveRequest);
+
+        $oldState = $leaveRequest->toArray();
+
+        $leaveRequest->update([
+            'status' => 'APPROVED',
+            'approver_signature' => $request->get('comment'),
+        ]);
+
+        $this->balanceService->deductBalance($leaveRequest);
+
+        $this->auditor->log('leave.approved', 'LeaveRequest', $leaveRequest->id, [
+            'before' => $oldState,
+            'after' => $leaveRequest->fresh()->toArray(),
+        ]);
+
+        return new LeaveRequestResource($leaveRequest);
+    }
+
+    public function reject(Request $request, LeaveRequest $leaveRequest)
+    {
+        $this->authorize('approve', $leaveRequest);
+
+        $oldState = $leaveRequest->toArray();
+
+        $leaveRequest->update([
+            'status' => 'REJECTED',
+            'approver_signature' => $request->get('comment'),
+        ]);
+
+        $this->auditor->log('leave.rejected', 'LeaveRequest', $leaveRequest->id, [
+            'before' => $oldState,
+            'after' => $leaveRequest->fresh()->toArray(),
+        ]);
+
+        return new LeaveRequestResource($leaveRequest);
     }
 }
