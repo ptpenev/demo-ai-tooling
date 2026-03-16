@@ -1,14 +1,14 @@
 ---
 work_package_id: WP07
 title: Leave Approvals & Audit
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: master
 base_commit: dc91df5312dd2f868a6a8d874562df3d9cc4202a
 created_at: '2026-03-16T11:34:09.124863+00:00'
 subtasks: [T023, T024, T039]
-shell_pid: "4516"
-agent: "opencode"
+shell_pid: "13392"
+agent: "gemini-3-flash-preview-reviewer"
 ---
 
 # WP07: Leave Approvals & Audit
@@ -41,3 +41,4 @@ Implement the approval workflow for leave requests and the central audit logging
 
 - 2026-03-16T11:34:10Z – opencode – shell_pid=4516 – lane=doing – Assigned agent via workflow command
 - 2026-03-16T11:37:20Z – opencode – shell_pid=4516 – lane=for_review – Leave Approvals and central Audit system implemented. Includes backend approval logic, immutable audit logging with data snapshots, and dedicated UI for both employees and managers.
+- 2026-03-16T11:42:26Z – gemini-3-flash-preview-reviewer – shell_pid=13392 – lane=doing – Started review via workflow command
