@@ -1,9 +1,13 @@
 ---
 work_package_id: WP02
 title: IAM & User Profiles
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: 09739d614c19706011443498ec408106e97eff60
+created_at: '2026-03-16T11:09:48.958475+00:00'
 subtasks: [T007, T008, T009, T010, T011]
+shell_pid: "10592"
 ---
 
 # WP02: IAM & User Profiles
