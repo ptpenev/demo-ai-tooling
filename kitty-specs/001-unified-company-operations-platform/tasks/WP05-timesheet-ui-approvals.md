@@ -1,14 +1,14 @@
 ---
 work_package_id: WP05
 title: Timesheet UI & Approvals
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: master
 base_commit: c6523dd3d93e7b98c3dd31b1989a54804fdfb3fa
 created_at: '2026-03-16T11:26:54.182516+00:00'
 subtasks: [T019, T020]
-shell_pid: "10068"
-agent: "opencode"
+shell_pid: "10880"
+agent: "gemini-3-flash-preview-reviewer"
 ---
 
 # WP05: Timesheet UI & Approvals
@@ -37,3 +37,4 @@ Build the user interface for time reporting and the manager interface for approv
 
 - 2026-03-16T11:26:55Z – opencode – shell_pid=10068 – lane=doing – Assigned agent via workflow command
 - 2026-03-16T11:28:43Z – opencode – shell_pid=10068 – lane=for_review – Implementation of Timesheet UI and Approvals complete. Includes user reporting view with week navigation, manager review dashboard with approve/reject actions, and updated backend API/Policies to support the approval workflow.
+- 2026-03-16T11:29:12Z – gemini-3-flash-preview-reviewer – shell_pid=10880 – lane=doing – Started review via workflow command
