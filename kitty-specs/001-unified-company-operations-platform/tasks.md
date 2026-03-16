@@ -69,8 +69,8 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Frontend for time reporting and manager approvals.
 - **Priority**: Medium
 - **Subtasks**:
-  - [ ] T019: Build Timesheet UI (User reporting view).
-  - [ ] T020: Implement Timesheet Approval/Correction API for Managers.
+  - [x] T019: Build Timesheet UI (User reporting view).
+  - [x] T020: Implement Timesheet Approval/Correction API for Managers.
 - **Implementation Sketch**: Create a list/grid view for daily/weekly reporting and a manager-only approval dashboard.
 - **Dependencies**: WP04
 - **Prompt Size**: ~150 lines
