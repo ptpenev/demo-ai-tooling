@@ -1,7 +1,7 @@
 ---
 work_package_id: WP07
 title: Leave Approvals & Audit
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: dc91df5312dd2f868a6a8d874562df3d9cc4202a
@@ -40,3 +40,4 @@ Implement the approval workflow for leave requests and the central audit logging
 ## Activity Log
 
 - 2026-03-16T11:34:10Z – opencode – shell_pid=4516 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:37:20Z – opencode – shell_pid=4516 – lane=for_review – Leave Approvals and central Audit system implemented. Includes backend approval logic, immutable audit logging with data snapshots, and dedicated UI for both employees and managers.
