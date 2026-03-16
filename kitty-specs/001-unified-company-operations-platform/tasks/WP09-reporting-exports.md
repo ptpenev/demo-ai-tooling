@@ -1,9 +1,13 @@
 ---
 work_package_id: WP09
 title: Reporting & Exports
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: 8a833dc05eb2ab256ceb248a5aaf302644e55cf2
+created_at: '2026-03-16T11:46:12.088506+00:00'
 subtasks: [T029, T030, T031, T032]
+shell_pid: "8788"
 ---
 
 # WP09: Reporting & Exports
