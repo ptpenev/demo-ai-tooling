@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: Timesheet UI & Approvals
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: c6523dd3d93e7b98c3dd31b1989a54804fdfb3fa
@@ -36,3 +36,4 @@ Build the user interface for time reporting and the manager interface for approv
 ## Activity Log
 
 - 2026-03-16T11:26:55Z – opencode – shell_pid=10068 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:28:43Z – opencode – shell_pid=10068 – lane=for_review – Implementation of Timesheet UI and Approvals complete. Includes user reporting view with week navigation, manager review dashboard with approve/reject actions, and updated backend API/Policies to support the approval workflow.
