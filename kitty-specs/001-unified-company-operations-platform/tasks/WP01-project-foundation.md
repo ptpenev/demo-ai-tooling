@@ -1,0 +1,61 @@
+---
+work_package_id: "WP01"
+title: "Project Foundation"
+lane: "planned"
+dependencies: []
+subtasks: ["T001", "T002", "T003", "T004", "T005", "T006"]
+---
+
+# WP01: Project Foundation
+
+## Objective
+Bootstrap the Laravel 12 + React 18 monorepo environment, configure Docker, and set up core libraries (Sanctum, Spatie, React Query, Zustand, Shadcn/ui).
+
+## Context
+This is the foundational work package for the Unified Company Operations Platform. We need a robust, modular setup that supports Domain Modules in the backend and a modern, responsive React frontend.
+
+## Guidance
+
+### T001: Bootstrap Laravel 12 & React 18 (Vite)
+- Initialize a fresh Laravel 12 project.
+- Configure Vite for React 18 and TypeScript.
+- Set up the following directory structure in `app/Modules/`:
+  - `Core/`
+  - `Users/`, `Projects/`, `Timesheets/`, etc.
+- Ensure the frontend lives in `resources/js/` and is correctly linked via Vite.
+
+### T002: Set up Docker Configuration
+- Create a `docker-compose.yml` with:
+  - `app` (PHP 8.3-FPM)
+  - `web` (NGINX)
+  - `db` (PostgreSQL 16+)
+  - `redis`
+- Ensure volumes are mapped correctly for development.
+- Configure `.env` defaults for Docker.
+
+### T003: Configure Authentication & Permissions
+- Install and configure Laravel Sanctum for API authentication.
+- Install Spatie Laravel Permission.
+- Create a `Permissions` migration extension as per `data-model.md` to include `module`, `resource`, `action`, `scope`, and `is_project_specific`.
+
+### T004: Implement Core Module
+- Create `app/Modules/Core/`.
+- Define base shared Enums: `TimeType`, `LeaveStatus`, `TargetType`.
+- Create a base `ModuleServiceProvider` that other modules can extend for automatic route/migration loading.
+
+### T005: React Query & Zustand Setup
+- Install `@tanstack/react-query` and `zustand`.
+- Configure `QueryClientProvider` in `App.tsx`.
+- Initialize a basic `useAuthStore` in `resources/js/store/auth.ts`.
+
+### T006: Shadcn/ui Integration
+- Initialize Tailwind CSS.
+- Install and initialize `shadcn/ui`.
+- Add core components: `Button`, `Card`, `Input`, `Dialog`, `Toast`.
+
+## Definition of Done
+- [ ] Docker environment spins up and serves the Laravel welcome page + React "Hello World".
+- [ ] Database migrations (Sanctum + Spatie) run successfully.
+- [ ] `app/Modules/Core/` exists and contains the requested Enums.
+- [ ] Shadcn components are usable in React.
+- [ ] No [NEEDS CLARIFICATION] markers left.

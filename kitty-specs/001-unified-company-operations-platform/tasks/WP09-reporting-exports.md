@@ -1,0 +1,38 @@
+---
+work_package_id: WP09
+title: Reporting & Exports
+lane: planned
+dependencies: []
+subtasks: [T029, T030, T031, T032]
+---
+
+# WP09: Reporting & Exports
+
+## Objective
+Enable data extraction for external use via CSV and PDF exports.
+
+## Guidance
+
+### T029: Reporting Service
+- Create `ReportingService` to handle complex filtering logic for timesheets and leaves.
+- Support filters: `user_id`, `project_id`, `date_start`, `date_end`, `type`.
+
+### T030: CSV Export (Queued)
+- Integrate `maatwebsite/excel`.
+- Implement `ExportTimesheetsCsv` job.
+- Store results in S3 (or local disk) and notify the user when ready.
+
+### T031: PDF Export (Queued)
+- Integrate `barryvdh/laravel-dompdf`.
+- Create a clean PDF template for timesheet and leave summaries.
+- Implement `ExportTimesheetsPdf` job.
+
+### T032: Reporting UI
+- Create `Reports` page in React.
+- Build a filter bar and download buttons for different formats.
+- Show "Pending Exports" list with download links.
+
+## Definition of Done
+- [ ] Users can trigger a CSV/PDF export with filters.
+- [ ] Exports run in the background (Redis queue).
+- [ ] Downloadable files are generated correctly and match the filtered data.
