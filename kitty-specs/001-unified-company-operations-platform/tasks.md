@@ -79,9 +79,9 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Leave requests and automated balance tracking.
 - **Priority**: Medium
 - **Subtasks**:
-  - [ ] T021: Implement LeaveType and LeaveRequest models/migrations.
-  - [ ] T022: Build API for Leave Request submission and balance tracking.
-  - [ ] T025: Implement Leave Balance calculation logic (Accruals/Remaining).
+  - [x] T021: Implement LeaveType and LeaveRequest models/migrations.
+  - [x] T022: Build API for Leave Request submission and balance tracking.
+  - [x] T025: Implement Leave Balance calculation logic (Accruals/Remaining).
 - **Implementation Sketch**: Create leave request entities, implement business logic for balance deduction and accrual.
 - **Dependencies**: WP02
 - **Prompt Size**: ~250 lines
