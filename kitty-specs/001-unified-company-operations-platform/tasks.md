@@ -46,10 +46,10 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Manage projects and team assignments with scoping.
 - **Priority**: Medium
 - **Subtasks**:
-  - [ ] T012: Implement Project model and migrations (Projects Module).
-  - [ ] T013: Build API for Project CRUD and Member assignment.
-  - [ ] T014: Implement UI for Project Management (Admin/PM views).
-  - [ ] T015: Add Project scoping logic to IAM system.
+  - [x] T012: Implement Project model and migrations (Projects Module).
+  - [x] T013: Build API for Project CRUD and Member assignment.
+  - [x] T014: Implement UI for Project Management (Admin/PM views).
+  - [x] T015: Add Project scoping logic to IAM system.
 - **Implementation Sketch**: Create project entities, member relationship tables, and the management dashboard.
 - **Dependencies**: WP02
 - **Prompt Size**: ~250 lines
