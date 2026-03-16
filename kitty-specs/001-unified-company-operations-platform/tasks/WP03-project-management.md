@@ -1,14 +1,14 @@
 ---
 work_package_id: WP03
 title: Project Management
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: master
 base_commit: 3aedd6089ec0f611be7f8ce8132415f88c0bb872
 created_at: '2026-03-16T11:14:06.481570+00:00'
 subtasks: [T012, T013, T014, T015]
-shell_pid: "6760"
-agent: "gemini-3-flash-preview"
+shell_pid: "12800"
+agent: "gemini-3-flash-preview-reviewer"
 ---
 
 # WP03: Project Management
@@ -46,3 +46,4 @@ Implement project lifecycle management and team assignment with integrated scopi
 
 - 2026-03-16T11:14:07Z – gemini-3-flash-preview – shell_pid=6760 – lane=doing – Assigned agent via workflow command
 - 2026-03-16T11:15:57Z – gemini-3-flash-preview – shell_pid=6760 – lane=for_review – Project Management implementation complete. Includes models, migrations, CRUD API with member management, ProjectPolicy for scoping, and initial management UI.
+- 2026-03-16T11:17:18Z – gemini-3-flash-preview-reviewer – shell_pid=12800 – lane=doing – Started review via workflow command
