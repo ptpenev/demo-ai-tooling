@@ -8,6 +8,7 @@ base_commit: 21d1f50915ac765ba1914b817b2a59b192bdcf5a
 created_at: '2026-03-16T11:43:21.944158+00:00'
 subtasks: [T026, T027, T028]
 shell_pid: "11752"
+agent: "gemini-3-flash-preview"
 ---
 
 # WP08: Unified Calendar
@@ -34,3 +35,7 @@ Visualize all company time data (timesheets, leaves, holidays) in a single inter
 - [ ] Users see their own reported time and approved leaves in the calendar.
 - [ ] Managers see team-wide visibility based on their scope.
 - [ ] Holidays are clearly marked on all calendar views.
+
+## Activity Log
+
+- 2026-03-16T11:43:23Z – gemini-3-flash-preview – shell_pid=11752 – lane=doing – Assigned agent via workflow command
