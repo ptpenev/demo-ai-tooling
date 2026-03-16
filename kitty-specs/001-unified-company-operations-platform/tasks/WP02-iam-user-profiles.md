@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: IAM & User Profiles
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: 09739d614c19706011443498ec408106e97eff60
@@ -55,3 +55,4 @@ The platform requires a sophisticated permission model where access is determine
 ## Activity Log
 
 - 2026-03-16T11:09:50Z – gemini-3-flash-preview – shell_pid=10592 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:11:24Z – gemini-3-flash-preview – shell_pid=10592 – lane=for_review – IAM & User Profiles implementation complete. Includes hybrid RBAC+PBAC scoping logic, User profile API, scoping middleware, and Admin UI for permissions.
