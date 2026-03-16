@@ -8,6 +8,7 @@ base_commit: 11c06c1098085a7f16b7ce56ebe2fea7ae425986
 created_at: '2026-03-16T11:17:49.455639+00:00'
 subtasks: [T016, T017, T018]
 shell_pid: "13304"
+agent: "opencode"
 ---
 
 # WP04: Timesheet Core
@@ -36,3 +37,7 @@ Implement the backend foundation for time reporting, including data structures a
 - [ ] Timesheet entries can be created via POST API with valid data.
 - [ ] Validation errors are returned for missing comments or invalid time types.
 - [ ] Users are blocked from reporting time for projects they don't belong to.
+
+## Activity Log
+
+- 2026-03-16T11:17:50Z – opencode – shell_pid=13304 – lane=doing – Assigned agent via workflow command
