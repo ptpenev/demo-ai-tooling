@@ -1,108 +1,81 @@
-# Implementation Plan: [FEATURE]
-*Path: [templates/plan-template.md](templates/plan-template.md)*
+# Implementation Plan: Unified Company Operations Platform
 
-
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/kitty-specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/spec-kitty.plan` command. See `src/specify_cli/missions/software-dev/command-templates/plan.md` for the execution workflow.
-
-The planner will not begin until all planning questions have been answered—capture those answers in this document before progressing to later phases.
+**Branch**: `master` | **Date**: 2026-03-16 | **Spec**: [spec.md](./spec.md)
+**Input**: Feature specification from `kitty-specs/001-unified-company-operations-platform/spec.md`
 
 ## Summary
-
-[Extract from feature spec: primary requirement + technical approach from research]
+The project involves building a centralized internal platform for Timesheets, Leave Management, and Communication using a modular Laravel 12 + React 18 architecture. The technical approach emphasizes a robust hybrid permission model (RBAC+PBAC) and immutable audit logs for accountability, while consolidating multiple legacy workflows into a single source of truth.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: PHP 8.3 (Laravel 12), TypeScript (React 18)
+**Primary Dependencies**: Shadcn/ui, Tailwind CSS, Laravel Reverb, Spatie Permission, React Query, Zustand
+**Storage**: PostgreSQL (Primary), Redis (Queues/Cache)
+**Testing**: PHPUnit (Backend), Vitest/Jest (Frontend)
+**Target Platform**: Web (Responsive: Desktop, Tablet, Mobile)
+**Project Type**: Web Application (Monorepo-style Laravel + React)
+**Performance Goals**: 200 concurrent users, dashboard load < 2s
+**Constraints**: p95 < 200ms, immutable audit logs for state transitions
+**Scale/Scope**: Unified platform replacing 3+ legacy tools; 11+ domain modules
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [x] **Languages/Frameworks**: Matches constitution (Laravel 12, React 18)
+- [x] **Testing Requirements**: Matches constitution (PHPUnit, Vitest/Jest)
+- [x] **Performance/Scale**: Matches constitution (200 users, p95 < 200ms)
+- [x] **Deployment**: Matches constitution (Docker-based)
+- [x] **Code Quality**: Matches constitution (PR requirements, CI gates)
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```
-kitty-specs/[###-feature]/
-├── plan.md              # This file (/spec-kitty.plan command output)
-├── research.md          # Phase 0 output (/spec-kitty.plan command)
-├── data-model.md        # Phase 1 output (/spec-kitty.plan command)
-├── quickstart.md        # Phase 1 output (/spec-kitty.plan command)
-├── contracts/           # Phase 1 output (/spec-kitty.plan command)
-└── tasks.md             # Phase 2 output (/spec-kitty.tasks command - NOT created by /spec-kitty.plan)
+kitty-specs/001-unified-company-operations-platform/
+├── spec.md              # Feature specification
+├── plan.md              # This file
+├── research.md          # Decision log and findings
+├── data-model.md        # Entity definitions
+├── quickstart.md        # Dev onboarding and setup
+├── contracts/           # API contract definitions
+└── checklists/          # Quality validation
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+app/
+├── Modules/             # Domain-specific modules
+│   ├── Core/            # Shared primitives (DTOs, Enums, Base Models)
+│   ├── Users/
+│   ├── Projects/
+│   ├── Timesheets/
+│   ├── Leaves/
+│   ├── Calendar/
+│   ├── Reports/
+│   ├── Announcements/
+│   ├── Polls/
+│   ├── Permissions/
+│   ├── Audit/
+│   └── Notifications/
+
+resources/
+├── js/
+│   ├── features/        # React feature modules
+│   ├── components/      # Shared Shadcn/ui components
+│   ├── store/           # Zustand state management
+│   └── hooks/           # React Query and custom hooks
 
 tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+├── Feature/             # Laravel feature tests
+├── Unit/                # PHP unit tests
+└── js/                  # Vitest/Jest frontend tests
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Monorepo using Laravel for API and React (Vite) for the frontend SPA. Domain-driven modularity in the backend ensures isolation between core business units.
 
 ## Complexity Tracking
 
-*Fill ONLY if Constitution Check has violations that must be justified*
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+*No constitution violations identified.*
