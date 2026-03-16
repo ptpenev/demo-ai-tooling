@@ -116,10 +116,10 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Data extraction in CSV/PDF formats.
 - **Priority**: Low
 - **Subtasks**:
-  - [ ] T029: Implement Reporting Service (Filtering by User/Project/Period).
-  - [ ] T030: Build CSV export functionality (Queued job).
-  - [ ] T031: Build PDF export functionality (Queued job using DomPDF).
-  - [ ] T032: Create Reporting UI with filters and export buttons.
+  - [x] T029: Implement Reporting Service (Filtering by User/Project/Period).
+  - [x] T030: Build CSV export functionality (Queued job).
+  - [x] T031: Build PDF export functionality (Queued job using DomPDF).
+  - [x] T032: Create Reporting UI with filters and export buttons.
 - **Implementation Sketch**: Integrate Laravel Excel and DomPDF, set up export jobs with S3 storage.
 - **Dependencies**: WP05, WP07
 - **Prompt Size**: ~300 lines
