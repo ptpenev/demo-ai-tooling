@@ -8,6 +8,7 @@ base_commit: 092931735f861f954b2b1b646c4ea703608e3d4d
 created_at: '2026-03-16T11:30:31.773979+00:00'
 subtasks: [T021, T022, T025]
 shell_pid: "10076"
+agent: "opencode"
 ---
 
 # WP06: Leave Management Backend
@@ -35,3 +36,7 @@ Implement leave request logic and automated balance tracking.
 - [ ] Users can submit leave requests via API.
 - [ ] System correctly calculates working days (excluding holidays).
 - [ ] Balance updates automatically upon request approval.
+
+## Activity Log
+
+- 2026-03-16T11:30:32Z – opencode – shell_pid=10076 – lane=doing – Assigned agent via workflow command
