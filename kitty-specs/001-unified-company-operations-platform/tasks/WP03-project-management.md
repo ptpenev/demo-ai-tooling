@@ -1,9 +1,13 @@
 ---
 work_package_id: WP03
 title: Project Management
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: 3aedd6089ec0f611be7f8ce8132415f88c0bb872
+created_at: '2026-03-16T11:14:06.481570+00:00'
 subtasks: [T012, T013, T014, T015]
+shell_pid: "6760"
 ---
 
 # WP03: Project Management
