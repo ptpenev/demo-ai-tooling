@@ -105,9 +105,9 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Centralized view of time and absences.
 - **Priority**: Low
 - **Subtasks**:
-  - [ ] T026: Implement Unified Calendar API (Aggregating Timesheets, Leaves, Holidays).
-  - [ ] T027: Integrate FullCalendar React component into frontend.
-  - [ ] T028: Implement Calendar views (Day/Week/Month/Year) with role-based scoping.
+  - [x] T026: Implement Unified Calendar API (Aggregating Timesheets, Leaves, Holidays).
+  - [x] T027: Integrate FullCalendar React component into frontend.
+  - [x] T028: Implement Calendar views (Day/Week/Month/Year) with role-based scoping.
 - **Implementation Sketch**: Build a transformer that combines different models into a unified event format for FullCalendar.
 - **Dependencies**: WP05, WP07
 - **Prompt Size**: ~250 lines
