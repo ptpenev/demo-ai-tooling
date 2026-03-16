@@ -132,9 +132,9 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Internal communications and automated greetings.
 - **Priority**: Low
 - **Subtasks**:
-  - [ ] T033: Implement Announcement system (Model, Migration, API).
-  - [ ] T034: Build Announcement UI (Creation for Admin, Viewing for Users).
-  - [ ] T035: Implement Birthday Automation (Scheduled job to post greetings).
+  - [x] T033: Implement Announcement system (Model, Migration, API).
+  - [x] T034: Build Announcement UI (Creation for Admin, Viewing for Users).
+  - [x] T035: Implement Birthday Automation (Scheduled job to post greetings).
 - **Implementation Sketch**: Create announcement targets, build the display component, and schedule the birthday bot.
 - **Dependencies**: WP02
 - **Prompt Size**: ~250 lines
