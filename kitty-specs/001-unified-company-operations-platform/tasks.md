@@ -58,9 +58,9 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Backend logic for time reporting.
 - **Priority**: Medium
 - **Subtasks**:
-  - [ ] T016: Implement TimesheetEntry model and migrations (Timesheets Module).
-  - [ ] T017: Build API for Timesheet reporting (Create/Read/Edit).
-  - [ ] T018: Implement validation for time types and mandatory comments.
+  - [x] T016: Implement TimesheetEntry model and migrations (Timesheets Module).
+  - [x] T017: Build API for Timesheet reporting (Create/Read/Edit).
+  - [x] T018: Implement validation for time types and mandatory comments.
 - **Implementation Sketch**: Define timesheet schema, implement validation rules for various time types, and create core reporting endpoints.
 - **Dependencies**: WP03
 - **Prompt Size**: ~200 lines
