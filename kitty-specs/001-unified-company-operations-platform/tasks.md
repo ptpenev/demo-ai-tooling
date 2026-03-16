@@ -15,11 +15,11 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Bootstrap the monorepo, Docker environment, and shared libraries.
 - **Priority**: High
 - **Subtasks**:
-  - [ ] T001: Bootstrap Laravel 12 & React 18 (Vite) monorepo structure.
-  - [ ] T002: Set up Docker configuration (NGINX, PostgreSQL, Redis).
+  - [x] T001: Bootstrap Laravel 12 & React 18 (Vite) monorepo structure.
+  - [x] T002: Set up Docker configuration (NGINX, PostgreSQL, Redis).
   - [ ] T003: Configure Authentication (Laravel Sanctum) and Spatie Permission.
-  - [ ] T004: Implement Core Module with shared Enums and Base Models.
-  - [ ] T005: Set up React Query and Zustand state management.
+  - [x] T004: Implement Core Module with shared Enums and Base Models.
+  - [x] T005: Set up React Query and Zustand state management.
   - [ ] T006: Integrate Shadcn/ui and Radix primitives into frontend.
 - **Implementation Sketch**: Initialize Laravel with Vite, configure Docker Compose, set up directory structure for Domain Modules.
 - **Dependencies**: None
