@@ -1,14 +1,14 @@
 ---
 work_package_id: WP04
 title: Timesheet Core
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: master
 base_commit: 11c06c1098085a7f16b7ce56ebe2fea7ae425986
 created_at: '2026-03-16T11:17:49.455639+00:00'
 subtasks: [T016, T017, T018]
-shell_pid: "13304"
-agent: "opencode"
+shell_pid: "11928"
+agent: "gemini-3-flash-preview-reviewer"
 ---
 
 # WP04: Timesheet Core
@@ -42,3 +42,4 @@ Implement the backend foundation for time reporting, including data structures a
 
 - 2026-03-16T11:17:50Z – opencode – shell_pid=13304 – lane=doing – Assigned agent via workflow command
 - 2026-03-16T11:20:25Z – opencode – shell_pid=13304 – lane=for_review – Timesheet Core implementation complete. Note: Dependency WP03 was manually merged into the worktree to access User and Project models, as it was missing from the WP prompt dependencies list.
+- 2026-03-16T11:24:58Z – gemini-3-flash-preview-reviewer – shell_pid=11928 – lane=doing – Started review via workflow command
