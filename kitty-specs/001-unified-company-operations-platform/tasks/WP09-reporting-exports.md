@@ -8,6 +8,7 @@ base_commit: 8a833dc05eb2ab256ceb248a5aaf302644e55cf2
 created_at: '2026-03-16T11:46:12.088506+00:00'
 subtasks: [T029, T030, T031, T032]
 shell_pid: "8788"
+agent: "gemini-3-flash-preview"
 ---
 
 # WP09: Reporting & Exports
@@ -40,3 +41,7 @@ Enable data extraction for external use via CSV and PDF exports.
 - [ ] Users can trigger a CSV/PDF export with filters.
 - [ ] Exports run in the background (Redis queue).
 - [ ] Downloadable files are generated correctly and match the filtered data.
+
+## Activity Log
+
+- 2026-03-16T11:46:13Z – gemini-3-flash-preview – shell_pid=8788 – lane=doing – Assigned agent via workflow command
