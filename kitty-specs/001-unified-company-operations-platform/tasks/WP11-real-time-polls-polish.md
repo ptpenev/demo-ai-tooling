@@ -1,7 +1,7 @@
 ---
 work_package_id: WP11
 title: Real-time Polls & Polish
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: fef43b3f0bc980931af64e115e046867d3983f65
@@ -45,3 +45,4 @@ Implement interactive polls with real-time updates and perform final system-wide
 ## Activity Log
 
 - 2026-03-16T11:55:36Z – opencode – shell_pid=1968 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:57:21Z – opencode – shell_pid=1968 – lane=for_review – Real-time Polls implemented with backend models, API, and WebSocket event. Laravel Reverb config added. React UI for polls features live result updates. A unified Dashboard component is also included as part of the final polish.
