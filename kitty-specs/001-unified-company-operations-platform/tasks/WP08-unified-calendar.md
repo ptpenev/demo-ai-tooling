@@ -1,7 +1,7 @@
 ---
 work_package_id: WP08
 title: Unified Calendar
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: 21d1f50915ac765ba1914b817b2a59b192bdcf5a
@@ -39,3 +39,4 @@ Visualize all company time data (timesheets, leaves, holidays) in a single inter
 ## Activity Log
 
 - 2026-03-16T11:43:23Z – gemini-3-flash-preview – shell_pid=11752 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:44:16Z – gemini-3-flash-preview – shell_pid=11752 – lane=for_review – Unified Calendar implemented. Includes aggregated API for timesheets, leaves, and holidays, and a React-based calendar UI with month/week/day views.
