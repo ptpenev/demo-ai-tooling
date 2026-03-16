@@ -17,10 +17,10 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Subtasks**:
   - [x] T001: Bootstrap Laravel 12 & React 18 (Vite) monorepo structure.
   - [x] T002: Set up Docker configuration (NGINX, PostgreSQL, Redis).
-  - [ ] T003: Configure Authentication (Laravel Sanctum) and Spatie Permission.
+  - [x] T003: Configure Authentication (Laravel Sanctum) and Spatie Permission.
   - [x] T004: Implement Core Module with shared Enums and Base Models.
   - [x] T005: Set up React Query and Zustand state management.
-  - [ ] T006: Integrate Shadcn/ui and Radix primitives into frontend.
+  - [x] T006: Integrate Shadcn/ui and Radix primitives into frontend.
 - **Implementation Sketch**: Initialize Laravel with Vite, configure Docker Compose, set up directory structure for Domain Modules.
 - **Dependencies**: None
 - **Prompt Size**: ~350 lines
