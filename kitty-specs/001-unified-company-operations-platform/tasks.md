@@ -90,9 +90,9 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Approval flow with audit trail (signatures).
 - **Priority**: Medium
 - **Subtasks**:
-  - [ ] T023: Implement Leave Approval flow with Audit Log "signatures".
-  - [ ] T024: Build Leave Management UI (Request form, Manager approval list).
-  - [ ] T039: Implement central AuditLog system for state tracking.
+  - [x] T023: Implement Leave Approval flow with Audit Log "signatures".
+  - [x] T024: Build Leave Management UI (Request form, Manager approval list).
+  - [x] T039: Implement central AuditLog system for state tracking.
 - **Implementation Sketch**: Create the approval interface and the immutable audit logging system for state snapshots.
 - **Dependencies**: WP06
 - **Prompt Size**: ~250 lines
