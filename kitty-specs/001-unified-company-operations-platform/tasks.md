@@ -29,11 +29,11 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Implement robust RBAC/PBAC and user management.
 - **Priority**: High
 - **Subtasks**:
-  - [ ] T007: Implement User model and migration (IAM Module).
-  - [ ] T008: Build API for User Profile (Read/Update).
-  - [ ] T009: Implement RBAC + PBAC logic (Roles, Permissions, Scopes).
-  - [ ] T010: Create Admin UI for Role & Permission management.
-  - [ ] T011: Implement Permission Middleware for API route protection.
+  - [x] T007: Implement User model and migration (IAM Module).
+  - [x] T008: Build API for User Profile (Read/Update).
+  - [x] T009: Implement RBAC + PBAC logic (Roles, Permissions, Scopes).
+  - [x] T010: Create Admin UI for Role & Permission management.
+  - [x] T011: Implement Permission Middleware for API route protection.
 - **Implementation Sketch**: Extend Spatie models with custom scope fields, build profile endpoints, and create the admin permission grid.
 - **Dependencies**: WP01
 - **Prompt Size**: ~300 lines
