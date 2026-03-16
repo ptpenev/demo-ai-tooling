@@ -1,9 +1,13 @@
 ---
 work_package_id: WP07
 title: Leave Approvals & Audit
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: dc91df5312dd2f868a6a8d874562df3d9cc4202a
+created_at: '2026-03-16T11:34:09.124863+00:00'
 subtasks: [T023, T024, T039]
+shell_pid: "4516"
 ---
 
 # WP07: Leave Approvals & Audit
