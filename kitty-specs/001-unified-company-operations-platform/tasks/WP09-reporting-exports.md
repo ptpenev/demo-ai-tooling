@@ -1,7 +1,7 @@
 ---
 work_package_id: WP09
 title: Reporting & Exports
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: 8a833dc05eb2ab256ceb248a5aaf302644e55cf2
@@ -45,3 +45,4 @@ Enable data extraction for external use via CSV and PDF exports.
 ## Activity Log
 
 - 2026-03-16T11:46:13Z – gemini-3-flash-preview – shell_pid=8788 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:48:00Z – gemini-3-flash-preview – shell_pid=8788 – lane=for_review – Reporting & Exports implemented. Includes ReportingService for complex filtering, queued background jobs for CSV and PDF exports, and a React-based reporting UI with filters.
