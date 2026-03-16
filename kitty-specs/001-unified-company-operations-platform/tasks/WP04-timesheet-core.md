@@ -1,9 +1,13 @@
 ---
 work_package_id: WP04
 title: Timesheet Core
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: 11c06c1098085a7f16b7ce56ebe2fea7ae425986
+created_at: '2026-03-16T11:17:49.455639+00:00'
 subtasks: [T016, T017, T018]
+shell_pid: "13304"
 ---
 
 # WP04: Timesheet Core
