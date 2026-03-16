@@ -16,11 +16,15 @@ class TimesheetEntry extends Model
         'hours',
         'time_type',
         'comment',
+        'status',
+        'approved_by',
+        'approved_at',
     ];
 
     protected $casts = [
         'date' => 'date',
         'hours' => 'float',
+        'approved_at' => 'datetime',
     ];
 
     public function user(): BelongsTo
@@ -31,5 +35,10 @@ class TimesheetEntry extends Model
     public function project(): BelongsTo
     {
         return $this->belongsTo(Project::class);
+    }
+
+    public function approver(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'approved_by');
     }
 }
