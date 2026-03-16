@@ -1,7 +1,7 @@
 ---
 work_package_id: WP10
 title: Announcements & Birthdays
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: ce8d3e11c7d48d93f27ba98c8ed9038c68c80d9b
@@ -39,3 +39,4 @@ Implement targeted internal announcements and automated birthday greetings.
 ## Activity Log
 
 - 2026-03-16T11:51:45Z – gemini-3-flash-preview – shell_pid=2648 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:53:22Z – gemini-3-flash-preview – shell_pid=2648 – lane=for_review – Announcements & Birthdays system implemented. Includes models/migrations for targeted announcements, API for user feed and admin creation, React-based feed UI, and a scheduled console command for automated birthday greetings.
