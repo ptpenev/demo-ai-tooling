@@ -8,6 +8,7 @@ base_commit: dc91df5312dd2f868a6a8d874562df3d9cc4202a
 created_at: '2026-03-16T11:34:09.124863+00:00'
 subtasks: [T023, T024, T039]
 shell_pid: "4516"
+agent: "opencode"
 ---
 
 # WP07: Leave Approvals & Audit
@@ -35,3 +36,7 @@ Implement the approval workflow for leave requests and the central audit logging
 - [ ] Managers can approve/reject leave requests with comments.
 - [ ] Every approval/rejection creates a detailed record in the `audit_logs` table.
 - [ ] Audit logs capture a "before" and "after" snapshot of the request state.
+
+## Activity Log
+
+- 2026-03-16T11:34:10Z – opencode – shell_pid=4516 – lane=doing – Assigned agent via workflow command
