@@ -56,4 +56,28 @@ class TimesheetPolicy
 
         return $entry->user_id === $user->id;
     }
+
+    public function approve(User $user, TimesheetEntry $entry): bool
+    {
+        $scope = $user->getPermissionScope('timesheets.approve');
+
+        if ($scope === 'all') {
+            return true;
+        }
+
+        if ($scope === 'project') {
+            // User must be a Project Manager or Team Lead of this project
+            return $user->projects()
+                ->where('project_id', $entry->project_id)
+                ->whereIn('role', ['PM', 'Team Lead'])
+                ->exists();
+        }
+
+        if ($scope === 'team') {
+            // Placeholder for team lead logic
+            return false;
+        }
+
+        return false;
+    }
 }

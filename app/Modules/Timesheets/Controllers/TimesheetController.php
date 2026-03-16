@@ -84,4 +84,28 @@ class TimesheetController extends Controller
         $timesheet->delete();
         return response()->noContent();
     }
+
+    public function approve(Request $request, TimesheetEntry $timesheet): TimesheetResource
+    {
+        $this->authorize('approve', $timesheet);
+
+        $timesheet->update([
+            'status' => 'APPROVED',
+            'approved_by' => $request->user()->id,
+            'approved_at' => now(),
+        ]);
+
+        return new TimesheetResource($timesheet);
+    }
+
+    public function reject(Request $request, TimesheetEntry $timesheet): TimesheetResource
+    {
+        $this->authorize('approve', $timesheet);
+
+        $timesheet->update([
+            'status' => 'REJECTED',
+        ]);
+
+        return new TimesheetResource($timesheet);
+    }
 }
