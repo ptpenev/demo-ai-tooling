@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Timesheet Core
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: master
 base_commit: 11c06c1098085a7f16b7ce56ebe2fea7ae425986
@@ -41,3 +41,4 @@ Implement the backend foundation for time reporting, including data structures a
 ## Activity Log
 
 - 2026-03-16T11:17:50Z – opencode – shell_pid=13304 – lane=doing – Assigned agent via workflow command
+- 2026-03-16T11:20:25Z – opencode – shell_pid=13304 – lane=for_review – Timesheet Core implementation complete. Note: Dependency WP03 was manually merged into the worktree to access User and Project models, as it was missing from the WP prompt dependencies list.
