@@ -143,10 +143,10 @@ The implementation is broken down into 11 work packages, following a sequence fr
 - **Goal**: Interactive polling and final system polish.
 - **Priority**: Low
 - **Subtasks**:
-  - [ ] T036: Implement Polls system (Model, Migration, API).
-  - [ ] T037: Set up Laravel Reverb for real-time Poll updates.
-  - [ ] T038: Build Polls UI with live result updates.
-  - [ ] T040: Final system-wide responsive UI audit and performance tuning.
+  - [x] T036: Implement Polls system (Model, Migration, API).
+  - [x] T037: Set up Laravel Reverb for real-time Poll updates.
+  - [x] T038: Build Polls UI with live result updates.
+  - [x] T040: Final system-wide responsive UI audit and performance tuning.
 - **Implementation Sketch**: Build the polling logic, configure Reverb broadcasting, and perform final UX refinements.
 - **Dependencies**: WP10
 - **Prompt Size**: ~350 lines
