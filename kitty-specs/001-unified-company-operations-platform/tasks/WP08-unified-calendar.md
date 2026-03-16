@@ -1,9 +1,13 @@
 ---
 work_package_id: WP08
 title: Unified Calendar
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: 21d1f50915ac765ba1914b817b2a59b192bdcf5a
+created_at: '2026-03-16T11:43:21.944158+00:00'
 subtasks: [T026, T027, T028]
+shell_pid: "11752"
 ---
 
 # WP08: Unified Calendar
