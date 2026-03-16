@@ -8,6 +8,7 @@ base_commit: fef43b3f0bc980931af64e115e046867d3983f65
 created_at: '2026-03-16T11:55:35.293887+00:00'
 subtasks: [T036, T037, T038, T040]
 shell_pid: "1968"
+agent: "opencode"
 ---
 
 # WP11: Real-time Polls & Polish
@@ -40,3 +41,7 @@ Implement interactive polls with real-time updates and perform final system-wide
 - [ ] Users can vote in polls and see results update instantly.
 - [ ] Anonymous polls do not leak user IDs in results.
 - [ ] Application is fully responsive and feels polished across all modules.
+
+## Activity Log
+
+- 2026-03-16T11:55:36Z – opencode – shell_pid=1968 – lane=doing – Assigned agent via workflow command
