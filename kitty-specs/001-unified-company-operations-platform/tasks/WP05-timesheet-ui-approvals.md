@@ -1,9 +1,13 @@
 ---
 work_package_id: WP05
 title: Timesheet UI & Approvals
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: c6523dd3d93e7b98c3dd31b1989a54804fdfb3fa
+created_at: '2026-03-16T11:26:54.182516+00:00'
 subtasks: [T019, T020]
+shell_pid: "10068"
 ---
 
 # WP05: Timesheet UI & Approvals
