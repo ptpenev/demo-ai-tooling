@@ -1,9 +1,13 @@
 ---
 work_package_id: WP11
 title: Real-time Polls & Polish
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: master
+base_commit: fef43b3f0bc980931af64e115e046867d3983f65
+created_at: '2026-03-16T11:55:35.293887+00:00'
 subtasks: [T036, T037, T038, T040]
+shell_pid: "1968"
 ---
 
 # WP11: Real-time Polls & Polish
