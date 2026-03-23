@@ -1,9 +1,13 @@
 ---
 work_package_id: WP02
 title: Roles & Permissions API
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: b677089c0494a3222e1425adecebac5acb461e79
+created_at: '2026-03-23T15:48:26.274484+00:00'
 subtasks: [T005, T006, T007]
+shell_pid: "13400"
 ---
 
 # WP02: Roles & Permissions API
