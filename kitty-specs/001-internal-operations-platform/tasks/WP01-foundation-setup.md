@@ -8,6 +8,7 @@ base_commit: 36b008d35c07f2e4aa37e4b900d506b8a41cb1dc
 created_at: '2026-03-23T15:20:25.356498+00:00'
 subtasks: [T001, T002, T003, T004]
 shell_pid: "284"
+agent: "opencode"
 ---
 
 # WP01: Foundation Setup & Auth
@@ -55,3 +56,7 @@ This is the foundational backend work package. The NestJS API must be secured us
 
 ## Reviewer Notes
 Ensure DTOs are used for all inputs and that the `PermissionsGuard` correctly evaluates the `scope` logic if a user is acting within a specific project.
+
+## Activity Log
+
+- 2026-03-23T15:20:26Z – opencode – shell_pid=284 – lane=doing – Assigned agent via workflow command
