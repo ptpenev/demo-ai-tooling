@@ -7,10 +7,10 @@ This document outlines the work packages for implementing the internal operation
 ### WP01: Foundation Setup & Auth
 **Goal**: Set up database connection, base user schemas, RBAC guards, and authentication.
 **Independent Test**: API can authenticate a user and return a JWT token, with protected routes rejecting unauthorized access.
-- [ ] T001: Configure Drizzle ORM and setup database connection in NestJS
-- [ ] T002: Create `users`, `roles`, `permissions`, `user_roles`, `role_permissions` schemas
-- [ ] T003: Implement PBAC/RBAC Guards & Decorators in NestJS
-- [ ] T004: Implement Auth Login and User Profile API endpoints (JWT)
+- [x] T001: Configure Drizzle ORM and setup database connection in NestJS
+- [x] T002: Create `users`, `roles`, `permissions`, `user_roles`, `role_permissions` schemas
+- [x] T003: Implement PBAC/RBAC Guards & Decorators in NestJS
+- [x] T004: Implement Auth Login and User Profile API endpoints (JWT)
 **Estimated Size**: ~400 lines
 **Parallel Opportunities**: None (blocking for all other modules)
 **Dependencies**: None
