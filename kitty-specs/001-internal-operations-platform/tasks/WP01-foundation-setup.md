@@ -1,13 +1,13 @@
 ---
 work_package_id: WP01
 title: Foundation Setup & Auth
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 36b008d35c07f2e4aa37e4b900d506b8a41cb1dc
 created_at: '2026-03-23T15:20:25.356498+00:00'
 subtasks: [T001, T002, T003, T004]
-shell_pid: "284"
+shell_pid: "14972"
 agent: "opencode"
 ---
 
@@ -61,3 +61,4 @@ Ensure DTOs are used for all inputs and that the `PermissionsGuard` correctly ev
 
 - 2026-03-23T15:20:26Z – opencode – shell_pid=284 – lane=doing – Assigned agent via workflow command
 - 2026-03-23T15:35:38Z – opencode – shell_pid=284 – lane=for_review – Ready for review
+- 2026-03-23T15:39:36Z – opencode – shell_pid=14972 – lane=doing – Started review via workflow command
