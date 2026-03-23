@@ -18,9 +18,9 @@ This document outlines the work packages for implementing the internal operation
 ### WP02: Roles & Permissions API
 **Goal**: Allow Admins to manage roles and assignments.
 **Independent Test**: Admin can create a new role with specific permissions and assign it to a user.
-- [ ] T005: Create Roles & Permissions CRUD API
-- [ ] T006: Create Role Assignment API (global and project-scoped)
-- [ ] T007: Write Integration Tests for RBAC/PBAC
+- [x] T005: Create Roles & Permissions CRUD API
+- [x] T006: Create Role Assignment API (global and project-scoped)
+- [x] T007: Write Integration Tests for RBAC/PBAC
 **Estimated Size**: ~350 lines
 **Parallel Opportunities**: Can run alongside Frontend Foundation
 **Dependencies**: WP01
