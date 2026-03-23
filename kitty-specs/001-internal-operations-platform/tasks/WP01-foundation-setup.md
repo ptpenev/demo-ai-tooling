@@ -1,9 +1,13 @@
 ---
-work_package_id: "WP01"
-title: "Foundation Setup & Auth"
-lane: "planned"
+work_package_id: WP01
+title: Foundation Setup & Auth
+lane: "doing"
 dependencies: []
-subtasks: ["T001", "T002", "T003", "T004"]
+base_branch: second-demo-nestjs
+base_commit: 36b008d35c07f2e4aa37e4b900d506b8a41cb1dc
+created_at: '2026-03-23T15:20:25.356498+00:00'
+subtasks: [T001, T002, T003, T004]
+shell_pid: "284"
 ---
 
 # WP01: Foundation Setup & Auth
