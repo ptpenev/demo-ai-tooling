@@ -30,4 +30,7 @@
 
 .kittify/workspaces/
 
+storage/
+vendor/
+
 .env
