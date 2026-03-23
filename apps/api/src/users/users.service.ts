@@ -1,8 +1,9 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { eq, inArray } from 'drizzle-orm';
+import { Injectable, Inject, NotFoundException } from '@nestjs/common';
+import { eq, inArray, and } from 'drizzle-orm';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';
 import { DB_CONNECTION } from '../db/db.module';
 import * as schema from '../db/schema';
+import { AssignRoleDto } from './dto/assign-role.dto';
 
 @Injectable()
 export class UsersService {
@@ -33,14 +34,6 @@ export class UsersService {
 
     const roleIds = userRoles.map((ur) => ur.role_id);
 
-    const rolePermissions = await this.db.query.role_permissions.findMany({
-      where: inArray(schema.role_permissions.role_id, roleIds),
-      with: {
-        permission_id: true, // We need to do a join properly
-      }
-    });
-
-    // Actually, since we need permissions, we should write a proper Drizzle join query.
     return this.db
       .select({
         action: schema.permissions.action,
@@ -51,5 +44,51 @@ export class UsersService {
       .innerJoin(schema.role_permissions, eq(schema.role_permissions.permission_id, schema.permissions.id))
       .innerJoin(schema.user_roles, eq(schema.user_roles.role_id, schema.role_permissions.role_id))
       .where(eq(schema.user_roles.user_id, userId));
+  }
+
+  async assignRole(userId: string, assignRoleDto: AssignRoleDto) {
+    const { role_id, project_id } = assignRoleDto;
+
+    // Verify user exists
+    const user = await this.findById(userId);
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+
+    // Verify role exists
+    const role = await this.db.query.roles.findFirst({
+      where: eq(schema.roles.id, role_id),
+    });
+    if (!role) {
+      throw new NotFoundException('Role not found');
+    }
+
+    // Check if assignment already exists
+    const conditions = [
+      eq(schema.user_roles.user_id, userId),
+      eq(schema.user_roles.role_id, role_id),
+    ];
+    
+    if (project_id) {
+      conditions.push(eq(schema.user_roles.project_id, project_id));
+    }
+
+    const existing = await this.db.query.user_roles.findFirst({
+      where: and(...conditions),
+    });
+
+    if (existing) {
+      return existing; // already assigned
+    }
+
+    const [assignment] = await this.db.insert(schema.user_roles)
+      .values({
+        user_id: userId,
+        role_id: role_id,
+        project_id: project_id || null,
+      })
+      .returning();
+
+    return assignment;
   }
 }
