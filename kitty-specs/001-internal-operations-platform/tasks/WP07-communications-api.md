@@ -1,9 +1,13 @@
 ---
 work_package_id: WP07
 title: Communications Backend
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 2637efcfa127a048310f790642a868db7e7ae537
+created_at: '2026-03-24T09:00:25.815934+00:00'
 subtasks: [T019, T020, T021, T022]
+shell_pid: "21128"
 ---
 
 # WP07: Communications Backend
