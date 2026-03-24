@@ -1,9 +1,13 @@
 ---
 work_package_id: WP12
 title: Frontend Calendar UI
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: a897f429a1743c591195ae447b5be4403739d247
+created_at: '2026-03-24T09:49:59.420412+00:00'
 subtasks: [T032, T033]
+shell_pid: "9796"
 ---
 
 # WP12: Frontend Calendar UI
