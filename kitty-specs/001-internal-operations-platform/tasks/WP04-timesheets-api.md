@@ -1,13 +1,13 @@
 ---
 work_package_id: WP04
 title: Timesheets Backend
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 15618551d1115e6b72e91ee47bde286ff101f759
 created_at: '2026-03-24T08:10:43.817940+00:00'
 subtasks: [T011, T012, T013]
-shell_pid: "5880"
+shell_pid: "10884"
 agent: "opencode"
 ---
 
@@ -49,3 +49,4 @@ Check the validation logic for `hours` (e.g., must be a positive number, perhaps
 
 - 2026-03-24T08:10:45Z – opencode – shell_pid=5880 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T08:25:27Z – opencode – shell_pid=5880 – lane=for_review – Ready for review
+- 2026-03-24T08:26:04Z – opencode – shell_pid=10884 – lane=doing – Started review via workflow command
