@@ -8,6 +8,7 @@ base_commit: cd0a62c28cd31a7784b692efd81ba4baa5f741c7
 created_at: '2026-03-24T09:42:21.557540+00:00'
 subtasks: [T030, T031]
 shell_pid: "20744"
+agent: "opencode"
 ---
 
 # WP11: Frontend Leaves UI
@@ -39,3 +40,7 @@ Displays current leave balances to users so they know how much time they can req
 
 ## Reviewer Notes
 Ensure that the frontend accurately reflects the "pending" state of leave requests and that managers can easily approve them with immediate UI feedback.
+
+## Activity Log
+
+- 2026-03-24T09:42:22Z – opencode – shell_pid=20744 – lane=doing – Assigned agent via workflow command
