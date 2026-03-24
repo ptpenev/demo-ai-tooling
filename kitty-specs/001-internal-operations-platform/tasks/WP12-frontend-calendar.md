@@ -1,7 +1,7 @@
 ---
 work_package_id: WP12
 title: Frontend Calendar UI
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: a897f429a1743c591195ae447b5be4403739d247
@@ -45,3 +45,4 @@ Verify that fetching data for a full month across an entire team does not cause 
 ## Activity Log
 
 - 2026-03-24T09:50:00Z – opencode – shell_pid=9796 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T09:57:28Z – opencode – shell_pid=9796 – lane=for_review – Ready for review
