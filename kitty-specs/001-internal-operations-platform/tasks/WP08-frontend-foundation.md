@@ -8,6 +8,7 @@ base_commit: 79a8093e6c0c555c131ade44156c7ae778b3498f
 created_at: '2026-03-24T09:10:23.258639+00:00'
 subtasks: [T023, T024, T025]
 shell_pid: "1484"
+agent: "opencode"
 ---
 
 # WP08: Frontend Foundation & Auth
@@ -42,3 +43,7 @@ This is the base UI layer. React Query handles remote data, Zustand handles loca
 
 ## Reviewer Notes
 Ensure that the token is managed securely and that the generic API client correctly handles 401 Unauthorized responses by logging the user out.
+
+## Activity Log
+
+- 2026-03-24T09:10:24Z – opencode – shell_pid=1484 – lane=doing – Assigned agent via workflow command
