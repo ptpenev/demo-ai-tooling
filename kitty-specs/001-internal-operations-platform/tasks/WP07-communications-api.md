@@ -1,7 +1,7 @@
 ---
 work_package_id: WP07
 title: Communications Backend
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 2637efcfa127a048310f790642a868db7e7ae537
@@ -50,3 +50,4 @@ Check the CRON job configuration to ensure it does not fire continuously or at u
 ## Activity Log
 
 - 2026-03-24T09:00:27Z – opencode – shell_pid=21128 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T09:08:50Z – opencode – shell_pid=21128 – lane=for_review – Ready for review
