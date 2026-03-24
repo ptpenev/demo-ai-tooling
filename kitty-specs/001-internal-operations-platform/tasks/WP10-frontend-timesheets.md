@@ -1,9 +1,13 @@
 ---
 work_package_id: WP10
 title: Frontend Timesheets UI
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 431b936ab9a50d69577d5d2e7992794d9ef77d8d
+created_at: '2026-03-24T09:32:27.974476+00:00'
 subtasks: [T028, T029]
+shell_pid: "20224"
 ---
 
 # WP10: Frontend Timesheets UI
