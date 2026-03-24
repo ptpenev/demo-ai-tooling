@@ -1,9 +1,13 @@
 ---
 work_package_id: WP13
 title: Frontend Communications UI
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 818d2e2d7e444735dd1838977d7f5828406b2e05
+created_at: '2026-03-24T10:00:42.373215+00:00'
 subtasks: [T034, T035]
+shell_pid: "5036"
 ---
 
 # WP13: Frontend Communications UI
