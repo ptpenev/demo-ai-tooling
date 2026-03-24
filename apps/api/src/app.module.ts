@@ -9,9 +9,24 @@ import { ProjectsModule } from './projects/projects.module';
 import { TimesheetsModule } from './timesheets/timesheets.module';
 import { LeavesModule } from './leaves/leaves.module';
 import { CalendarModule } from './calendar/calendar.module';
+import { AnnouncementsModule } from './announcements/announcements.module';
+import { PollsModule } from './polls/polls.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
-  imports: [DbModule, AuthModule, UsersModule, RolesModule, ProjectsModule, TimesheetsModule, LeavesModule, CalendarModule],
+  imports: [
+    ScheduleModule.forRoot(),
+    DbModule, 
+    AuthModule, 
+    UsersModule, 
+    RolesModule, 
+    ProjectsModule, 
+    TimesheetsModule, 
+    LeavesModule, 
+    CalendarModule, 
+    AnnouncementsModule, 
+    PollsModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

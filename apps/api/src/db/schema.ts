@@ -90,3 +90,44 @@ export const leave_requests = pgTable('leave_requests', {
   requester_signature: varchar('requester_signature', { length: 255 }),
   approver_signature: varchar('approver_signature', { length: 255 }),
 });
+
+export const announcements = pgTable('announcements', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  title: text('title').notNull(),
+  content: text('content').notNull(),
+  author_id: uuid('author_id').references(() => users.id),
+  valid_from: date('valid_from'),
+  valid_to: date('valid_to'),
+  created_at: timestamp('created_at').defaultNow().notNull(),
+});
+
+export const announcement_targets = pgTable('announcement_targets', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  announcement_id: uuid('announcement_id').references(() => announcements.id).notNull(),
+  target_type: varchar('target_type', { length: 50 }).notNull(), // all, team, project, user
+  target_id: uuid('target_id'), // Optional, depending on target_type
+});
+
+export const polls = pgTable('polls', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  question: text('question').notNull(),
+  is_anonymous: boolean('is_anonymous').default(false).notNull(),
+  allow_multiple: boolean('allow_multiple').default(false).notNull(),
+  results_visibility: varchar('results_visibility', { length: 50 }).default('public').notNull(), // public, restricted
+  deadline: timestamp('deadline'),
+  created_at: timestamp('created_at').defaultNow().notNull(),
+  author_id: uuid('author_id').references(() => users.id),
+});
+
+export const poll_options = pgTable('poll_options', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  poll_id: uuid('poll_id').references(() => polls.id).notNull(),
+  option_text: varchar('option_text', { length: 255 }).notNull(),
+});
+
+export const poll_votes = pgTable('poll_votes', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  poll_option_id: uuid('poll_option_id').references(() => poll_options.id).notNull(),
+  user_id: uuid('user_id').references(() => users.id), // Optional if anonymous
+  created_at: timestamp('created_at').defaultNow().notNull(),
+});
