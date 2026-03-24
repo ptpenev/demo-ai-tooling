@@ -1,13 +1,13 @@
 ---
 work_package_id: WP02
 title: Roles & Permissions API
-lane: "for_review"
+lane: "doing"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: b677089c0494a3222e1425adecebac5acb461e79
 created_at: '2026-03-23T15:48:26.274484+00:00'
 subtasks: [T005, T006, T007]
-shell_pid: "13400"
+shell_pid: "20380"
 agent: "opencode"
 ---
 
@@ -52,3 +52,4 @@ Check that all endpoints strictly return the standardized `{ "data": {}, "meta":
 
 - 2026-03-23T15:48:27Z – opencode – shell_pid=13400 – lane=doing – Assigned agent via workflow command
 - 2026-03-23T16:06:51Z – opencode – shell_pid=13400 – lane=for_review – Ready for review
+- 2026-03-24T07:40:30Z – opencode – shell_pid=20380 – lane=doing – Started review via workflow command
