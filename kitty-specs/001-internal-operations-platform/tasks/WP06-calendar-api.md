@@ -1,7 +1,7 @@
 ---
 work_package_id: WP06
 title: Calendar Aggregation API
-lane: "doing"
+lane: "done"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 39f5071955c060a53d8ae455e326f360f07bedb1
@@ -9,6 +9,8 @@ created_at: '2026-03-24T08:47:16.279059+00:00'
 subtasks: [T017, T018]
 shell_pid: "18560"
 agent: "opencode"
+reviewed_by: "ptpenev"
+review_status: "approved"
 ---
 
 # WP06: Calendar Aggregation API
@@ -45,3 +47,4 @@ Ensure that the SQL queries for this endpoint are optimized, as it will be fetch
 - 2026-03-24T08:47:17Z – opencode – shell_pid=21492 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T08:58:20Z – opencode – shell_pid=21492 – lane=for_review – Ready for review
 - 2026-03-24T08:59:11Z – opencode – shell_pid=18560 – lane=doing – Started review via workflow command
+- 2026-03-24T09:00:08Z – opencode – shell_pid=18560 – lane=done – Review passed: Calendar aggregation API correctly merges timesheets, leaves, and holidays, and handles PBAC logic.
