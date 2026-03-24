@@ -30,9 +30,9 @@ This document outlines the work packages for implementing the internal operation
 ### WP03: Projects Backend
 **Goal**: API to manage projects and team assignments.
 **Independent Test**: Can create a project and assign a Team Lead to it.
-- [ ] T008: Create `projects` and `project_members` schemas
-- [ ] T009: Implement Projects API (CRUD & member assignment)
-- [ ] T010: Write Unit/Integration Tests for Projects
+- [x] T008: Create `projects` and `project_members` schemas
+- [x] T009: Implement Projects API (CRUD & member assignment)
+- [x] T010: Write Unit/Integration Tests for Projects
 **Estimated Size**: ~300 lines
 **Parallel Opportunities**: Yes [P]
 **Dependencies**: WP01
