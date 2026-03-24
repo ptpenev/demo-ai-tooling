@@ -39,8 +39,12 @@ export default function ProtectedLayout() {
             <Link to="/calendar" className="block py-2 px-4 rounded hover:bg-gray-100">Calendar</Link>
           )}
           {hasPermission('read', 'role') && (
-            <Link to="/admin" className="block py-2 px-4 rounded hover:bg-gray-100">Admin</Link>
+            <>
+              <Link to="/admin/roles" className="block py-2 px-4 rounded hover:bg-gray-100">Roles Management</Link>
+              <Link to="/admin/users" className="block py-2 px-4 rounded hover:bg-gray-100">User Assignments</Link>
+            </>
           )}
+          <Link to="/profile" className="block py-2 px-4 rounded hover:bg-gray-100">My Profile</Link>
           <button 
             onClick={logout}
             className="w-full text-left py-2 px-4 text-red-500 hover:bg-red-50 rounded mt-auto"
