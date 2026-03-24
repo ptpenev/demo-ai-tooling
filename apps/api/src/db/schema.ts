@@ -41,3 +41,22 @@ export const user_roles = pgTable('user_roles', {
   role_id: uuid('role_id').references(() => roles.id).notNull(),
   project_id: uuid('project_id'), // Optional, for scoped roles
 });
+
+export const projects = pgTable('projects', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  name: varchar('name', { length: 255 }).notNull(),
+  description: text('description'),
+  status: varchar('status', { length: 50 }).default('active').notNull(), // active, inactive, archived
+  start_date: timestamp('start_date'),
+  end_date: timestamp('end_date'),
+});
+
+export const project_members = pgTable('project_members', {
+  project_id: uuid('project_id').references(() => projects.id).notNull(),
+  user_id: uuid('user_id').references(() => users.id).notNull(),
+  project_role: varchar('project_role', { length: 50 }).notNull(), // manager, lead, member
+}, (table) => {
+  return {
+    pk: primaryKey({ columns: [table.project_id, table.user_id] })
+  }
+});
