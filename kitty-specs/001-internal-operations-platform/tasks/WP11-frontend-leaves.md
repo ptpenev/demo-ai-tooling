@@ -1,7 +1,7 @@
 ---
 work_package_id: WP11
 title: Frontend Leaves UI
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: cd0a62c28cd31a7784b692efd81ba4baa5f741c7
@@ -44,3 +44,4 @@ Ensure that the frontend accurately reflects the "pending" state of leave reques
 ## Activity Log
 
 - 2026-03-24T09:42:22Z – opencode – shell_pid=20744 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T09:47:56Z – opencode – shell_pid=20744 – lane=for_review – Ready for review
