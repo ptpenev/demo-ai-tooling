@@ -1,9 +1,13 @@
 ---
 work_package_id: WP04
 title: Timesheets Backend
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 15618551d1115e6b72e91ee47bde286ff101f759
+created_at: '2026-03-24T08:10:43.817940+00:00'
 subtasks: [T011, T012, T013]
+shell_pid: "5880"
 ---
 
 # WP04: Timesheets Backend
