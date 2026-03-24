@@ -82,9 +82,9 @@ This document outlines the work packages for implementing the internal operation
 ### WP08: Frontend Foundation & Auth
 **Goal**: Set up React app structure, styling, state, and authentication.
 **Independent Test**: User can log in via UI and see the protected layout.
-- [ ] T023: Setup React App (shadcn/ui, Tailwind, React Query, Zustand)
-- [ ] T024: Implement Login Page & Auth Context
-- [ ] T025: Implement App Layout & Navigation (Role-based visibility)
+- [x] T023: Setup React App (shadcn/ui, Tailwind, React Query, Zustand)
+- [x] T024: Implement Login Page & Auth Context
+- [x] T025: Implement App Layout & Navigation (Role-based visibility)
 **Estimated Size**: ~350 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP01
