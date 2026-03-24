@@ -50,9 +50,9 @@ This document outlines the work packages for implementing the internal operation
 ### WP05: Leave Management Backend
 **Goal**: API to submit and approve leave requests.
 **Independent Test**: Can submit a leave request and calculate remaining balance.
-- [ ] T014: Create `leave_types` and `leave_requests` schemas
-- [ ] T015: Implement Leave Requests API (Submit, Approve/Reject, Balances)
-- [ ] T016: Write Unit/Integration Tests for Leaves
+- [x] T014: Create `leave_types` and `leave_requests` schemas
+- [x] T015: Implement Leave Requests API (Submit, Approve/Reject, Balances)
+- [x] T016: Write Unit/Integration Tests for Leaves
 **Estimated Size**: ~350 lines
 **Parallel Opportunities**: Yes [P]
 **Dependencies**: WP01
