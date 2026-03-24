@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: Projects Backend
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: b3903a1f1c01b54491e85c23a18d1262f7b0fddc
@@ -48,3 +48,4 @@ Ensure that the SQL queries fetching projects use Drizzle's join capabilities ef
 ## Activity Log
 
 - 2026-03-24T07:49:58Z – opencode – shell_pid=5216 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T08:03:37Z – opencode – shell_pid=5216 – lane=for_review – Ready for review
