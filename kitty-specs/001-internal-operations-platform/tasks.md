@@ -60,8 +60,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP06: Calendar Aggregation API
 **Goal**: Unified endpoint to feed the frontend calendar.
 **Independent Test**: Can fetch timesheets and leaves for a specific month in one API call.
-- [ ] T017: Implement Calendar Aggregation API (Timesheets + Leaves)
-- [ ] T018: Write Calendar Aggregation Tests
+- [x] T017: Implement Calendar Aggregation API (Timesheets + Leaves)
+- [x] T018: Write Calendar Aggregation Tests
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP04, WP05
