@@ -40,9 +40,9 @@ This document outlines the work packages for implementing the internal operation
 ### WP04: Timesheets Backend
 **Goal**: API to log and manage time entries.
 **Independent Test**: Can log 8 hours of working time against an active project.
-- [ ] T011: Create `timesheet_entries` schema
-- [ ] T012: Implement Timesheets API (Create, Update, Delete, List)
-- [ ] T013: Write Unit/Integration Tests for Timesheets
+- [x] T011: Create `timesheet_entries` schema
+- [x] T012: Implement Timesheets API (Create, Update, Delete, List)
+- [x] T013: Write Unit/Integration Tests for Timesheets
 **Estimated Size**: ~350 lines
 **Parallel Opportunities**: Yes [P]
 **Dependencies**: WP03
