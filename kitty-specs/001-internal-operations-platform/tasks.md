@@ -119,8 +119,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP12: Frontend Calendar UI
 **Goal**: Visual calendar combining timesheets and leaves.
 **Independent Test**: User sees their logged hours and approved leaves on a monthly grid.
-- [ ] T032: Integrate FullCalendar React Component
-- [ ] T033: Connect Calendar to Aggregation API
+- [x] T032: Integrate FullCalendar React Component
+- [x] T033: Connect Calendar to Aggregation API
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP06, WP08
