@@ -1,9 +1,13 @@
 ---
 work_package_id: WP09
 title: Frontend Admin & Roles UI
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 34f8433199e58919ac2e964d6e4ec73f4991df9f
+created_at: '2026-03-24T09:22:28.422551+00:00'
 subtasks: [T026, T027]
+shell_pid: "21192"
 ---
 
 # WP09: Frontend Admin UI
