@@ -8,6 +8,7 @@ base_commit: b3903a1f1c01b54491e85c23a18d1262f7b0fddc
 created_at: '2026-03-24T07:49:57.101914+00:00'
 subtasks: [T008, T009, T010]
 shell_pid: "5216"
+agent: "opencode"
 ---
 
 # WP03: Projects Backend
@@ -43,3 +44,7 @@ Projects act as the central anchor for timesheets and some scoped permissions.
 
 ## Reviewer Notes
 Ensure that the SQL queries fetching projects use Drizzle's join capabilities efficiently and avoid N+1 issues when fetching member lists.
+
+## Activity Log
+
+- 2026-03-24T07:49:58Z – opencode – shell_pid=5216 – lane=doing – Assigned agent via workflow command
