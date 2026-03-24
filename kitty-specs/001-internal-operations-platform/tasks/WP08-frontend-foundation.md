@@ -1,7 +1,7 @@
 ---
 work_package_id: WP08
 title: Frontend Foundation & Auth
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 79a8093e6c0c555c131ade44156c7ae778b3498f
@@ -47,3 +47,4 @@ Ensure that the token is managed securely and that the generic API client correc
 ## Activity Log
 
 - 2026-03-24T09:10:24Z – opencode – shell_pid=1484 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T09:20:50Z – opencode – shell_pid=1484 – lane=for_review – Ready for review
