@@ -8,6 +8,7 @@ base_commit: 15618551d1115e6b72e91ee47bde286ff101f759
 created_at: '2026-03-24T08:10:43.817940+00:00'
 subtasks: [T011, T012, T013]
 shell_pid: "5880"
+agent: "opencode"
 ---
 
 # WP04: Timesheets Backend
@@ -43,3 +44,7 @@ This is a high-priority operational requirement. Users must be able to log hours
 
 ## Reviewer Notes
 Check the validation logic for `hours` (e.g., must be a positive number, perhaps max 24 per day). Ensure DTOs are strictly enforcing these rules.
+
+## Activity Log
+
+- 2026-03-24T08:10:45Z – opencode – shell_pid=5880 – lane=doing – Assigned agent via workflow command
