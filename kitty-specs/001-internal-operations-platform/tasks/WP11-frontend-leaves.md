@@ -1,7 +1,7 @@
 ---
 work_package_id: WP11
 title: Frontend Leaves UI
-lane: "doing"
+lane: "done"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: cd0a62c28cd31a7784b692efd81ba4baa5f741c7
@@ -9,6 +9,8 @@ created_at: '2026-03-24T09:42:21.557540+00:00'
 subtasks: [T030, T031]
 shell_pid: "21144"
 agent: "opencode"
+reviewed_by: "ptpenev"
+review_status: "approved"
 ---
 
 # WP11: Frontend Leaves UI
@@ -46,3 +48,4 @@ Ensure that the frontend accurately reflects the "pending" state of leave reques
 - 2026-03-24T09:42:22Z – opencode – shell_pid=20744 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T09:47:56Z – opencode – shell_pid=20744 – lane=for_review – Ready for review
 - 2026-03-24T09:48:20Z – opencode – shell_pid=21144 – lane=doing – Started review via workflow command
+- 2026-03-24T09:49:21Z – opencode – shell_pid=21144 – lane=done – Review passed: Frontend Leaves UI implemented successfully. Request form and balance tracking work correctly alongside approval views.
