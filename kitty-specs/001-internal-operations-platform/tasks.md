@@ -69,10 +69,10 @@ This document outlines the work packages for implementing the internal operation
 ### WP07: Communications Backend
 **Goal**: API for announcements and polls.
 **Independent Test**: Can publish an announcement and cast a vote on a poll.
-- [ ] T019: Create schema for Announcements and Polls
-- [ ] T020: Implement Announcements API and Birthday CRON
-- [ ] T021: Implement Polls API (List, Vote)
-- [ ] T022: Write Unit/Integration Tests for Communications
+- [x] T019: Create schema for Announcements and Polls
+- [x] T020: Implement Announcements API and Birthday CRON
+- [x] T021: Implement Polls API (List, Vote)
+- [x] T022: Write Unit/Integration Tests for Communications
 **Estimated Size**: ~400 lines
 **Parallel Opportunities**: Yes [P]
 **Dependencies**: WP03
