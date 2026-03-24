@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Roles from './pages/admin/Roles';
 import Users from './pages/admin/Users';
 import Profile from './pages/Profile';
+import Timesheets from './pages/timesheets/Index';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<ProtectedLayout />}>
             <Route index element={<Home />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="timesheets" element={<Timesheets />} />
             <Route path="admin/roles" element={<Roles />} />
             <Route path="admin/users" element={<Users />} />
             {/* Other routes will be added in subsequent WPs */}
