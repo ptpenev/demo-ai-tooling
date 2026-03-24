@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: Leaves Backend
-lane: "doing"
+lane: "done"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 4429350ad4df040fb64bdde3e5596c8c9787cdc5
@@ -9,6 +9,8 @@ created_at: '2026-03-24T08:28:17.189096+00:00'
 subtasks: [T014, T015, T016]
 shell_pid: "7276"
 agent: "opencode"
+reviewed_by: "ptpenev"
+review_status: "approved"
 ---
 
 # WP05: Leaves Backend
@@ -50,3 +52,4 @@ Ensure that overlapping leave dates for the same user are either rejected or han
 - 2026-03-24T08:28:18Z – opencode – shell_pid=21140 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T08:43:34Z – opencode – shell_pid=21140 – lane=for_review – Ready for review
 - 2026-03-24T08:44:10Z – opencode – shell_pid=7276 – lane=doing – Started review via workflow command
+- 2026-03-24T08:46:00Z – opencode – shell_pid=7276 – lane=done – Review passed: Leaves APIs and schema correctly implemented with balance tracking and PBAC checks verified via tests.
