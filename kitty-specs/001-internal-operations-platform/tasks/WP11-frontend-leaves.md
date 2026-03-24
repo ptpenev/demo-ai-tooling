@@ -1,9 +1,13 @@
 ---
 work_package_id: WP11
 title: Frontend Leaves UI
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: cd0a62c28cd31a7784b692efd81ba4baa5f741c7
+created_at: '2026-03-24T09:42:21.557540+00:00'
 subtasks: [T030, T031]
+shell_pid: "20744"
 ---
 
 # WP11: Frontend Leaves UI
