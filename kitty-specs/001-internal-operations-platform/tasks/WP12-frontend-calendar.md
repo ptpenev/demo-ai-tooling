@@ -1,7 +1,7 @@
 ---
 work_package_id: WP12
 title: Frontend Calendar UI
-lane: "doing"
+lane: "done"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: a897f429a1743c591195ae447b5be4403739d247
@@ -9,6 +9,8 @@ created_at: '2026-03-24T09:49:59.420412+00:00'
 subtasks: [T032, T033]
 shell_pid: "21636"
 agent: "opencode"
+reviewed_by: "ptpenev"
+review_status: "approved"
 ---
 
 # WP12: Frontend Calendar UI
@@ -47,3 +49,4 @@ Verify that fetching data for a full month across an entire team does not cause 
 - 2026-03-24T09:50:00Z – opencode – shell_pid=9796 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T09:57:28Z – opencode – shell_pid=9796 – lane=for_review – Ready for review
 - 2026-03-24T09:58:30Z – opencode – shell_pid=21636 – lane=doing – Started review via workflow command
+- 2026-03-24T09:59:40Z – opencode – shell_pid=21636 – lane=done – Review passed: Frontend Calendar UI properly integrated FullCalendar, maps events and holidays correctly, and applies PBAC scopes to filters.
