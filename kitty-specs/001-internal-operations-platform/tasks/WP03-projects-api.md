@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: Projects Backend
-lane: "doing"
+lane: "done"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: b3903a1f1c01b54491e85c23a18d1262f7b0fddc
@@ -9,6 +9,8 @@ created_at: '2026-03-24T07:49:57.101914+00:00'
 subtasks: [T008, T009, T010]
 shell_pid: "9036"
 agent: "opencode"
+reviewed_by: "ptpenev"
+review_status: "approved"
 ---
 
 # WP03: Projects Backend
@@ -50,3 +52,4 @@ Ensure that the SQL queries fetching projects use Drizzle's join capabilities ef
 - 2026-03-24T07:49:58Z – opencode – shell_pid=5216 – lane=doing – Assigned agent via workflow command
 - 2026-03-24T08:03:37Z – opencode – shell_pid=5216 – lane=for_review – Ready for review
 - 2026-03-24T08:07:05Z – opencode – shell_pid=9036 – lane=doing – Started review via workflow command
+- 2026-03-24T08:09:17Z – opencode – shell_pid=9036 – lane=done – Review passed: Projects APIs and schema correctly implemented and PBAC verified via tests.
