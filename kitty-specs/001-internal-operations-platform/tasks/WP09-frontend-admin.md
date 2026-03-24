@@ -1,7 +1,7 @@
 ---
 work_package_id: WP09
 title: Frontend Admin & Roles UI
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: second-demo-nestjs
 base_commit: 34f8433199e58919ac2e964d6e4ec73f4991df9f
@@ -41,3 +41,4 @@ Validate that forms use `shadcn/ui` and `React Hook Form` for strict client-side
 ## Activity Log
 
 - 2026-03-24T09:22:29Z – opencode – shell_pid=21192 – lane=doing – Assigned agent via workflow command
+- 2026-03-24T09:30:50Z – opencode – shell_pid=21192 – lane=for_review – Ready for review
