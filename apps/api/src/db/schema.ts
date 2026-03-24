@@ -1,4 +1,4 @@
-import { pgTable, uuid, varchar, text, boolean, timestamp, primaryKey } from 'drizzle-orm/pg-core';
+import { pgTable, uuid, varchar, text, boolean, timestamp, primaryKey, date, numeric } from 'drizzle-orm/pg-core';
 
 export const users = pgTable('users', {
   id: uuid('id').defaultRandom().primaryKey(),
@@ -59,4 +59,15 @@ export const project_members = pgTable('project_members', {
   return {
     pk: primaryKey({ columns: [table.project_id, table.user_id] })
   }
+});
+
+export const timesheet_entries = pgTable('timesheet_entries', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  user_id: uuid('user_id').references(() => users.id).notNull(),
+  project_id: uuid('project_id').references(() => projects.id).notNull(),
+  date: date('date').notNull(),
+  hours: numeric('hours', { precision: 5, scale: 2 }).notNull(),
+  time_type: varchar('time_type', { length: 50 }).notNull(), // working_time, overtime, day_off, client_agreement
+  comment: text('comment'),
+  is_approved: boolean('is_approved').default(false).notNull(),
 });
