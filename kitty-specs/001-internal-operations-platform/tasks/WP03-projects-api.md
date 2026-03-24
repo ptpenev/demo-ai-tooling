@@ -1,9 +1,13 @@
 ---
 work_package_id: WP03
 title: Projects Backend
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: b3903a1f1c01b54491e85c23a18d1262f7b0fddc
+created_at: '2026-03-24T07:49:57.101914+00:00'
 subtasks: [T008, T009, T010]
+shell_pid: "5216"
 ---
 
 # WP03: Projects Backend
