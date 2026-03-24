@@ -8,6 +8,7 @@ base_commit: a897f429a1743c591195ae447b5be4403739d247
 created_at: '2026-03-24T09:49:59.420412+00:00'
 subtasks: [T032, T033]
 shell_pid: "9796"
+agent: "opencode"
 ---
 
 # WP12: Frontend Calendar UI
@@ -40,3 +41,7 @@ This view helps Team Leads and employees visualize presence and absence quickly.
 
 ## Reviewer Notes
 Verify that fetching data for a full month across an entire team does not cause performance issues on the frontend. Ensure that the React Query hook utilizes stale-time appropriately.
+
+## Activity Log
+
+- 2026-03-24T09:50:00Z – opencode – shell_pid=9796 – lane=doing – Assigned agent via workflow command
