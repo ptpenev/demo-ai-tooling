@@ -1,5 +1,5 @@
 import { Injectable, Inject, BadRequestException, NotFoundException } from '@nestjs/common';
-import { eq, and, isNull, gte, inArray } from 'drizzle-orm';
+import { eq, and, isNull, gte, inArray, or } from 'drizzle-orm';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';
 import { DB_CONNECTION } from '../db/db.module';
 import * as schema from '../db/schema';

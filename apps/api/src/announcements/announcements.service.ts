@@ -99,7 +99,7 @@ export class AnnouncementsService {
     this.logger.log('Running birthday check cron...');
     // Real implementation: select users where date_part('month', birth_date) = month and date_part('day', birth_date) = day
     // Since we don't have birth_date on the table per T001, we'll simulate.
-    const mockFoundUsers = []; // e.g. [{ name: 'John Doe' }]
+    const mockFoundUsers: { name: string }[] = []; // e.g. [{ name: 'John Doe' }]
     
     if (mockFoundUsers.length > 0) {
       await this.create(null as any, {
