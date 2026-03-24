@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+.git/
+.worktrees/
+.claude/
+.opencode/
+.vscode/
+.DS_Store
