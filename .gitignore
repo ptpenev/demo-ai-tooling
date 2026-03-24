@@ -14,3 +14,5 @@
 .kittify/.dashboard
 .kittify/missions/__pycache__/
 .opencode/
+node_modules/
+dist/
