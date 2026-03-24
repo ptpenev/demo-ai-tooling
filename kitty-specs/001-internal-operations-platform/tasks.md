@@ -101,8 +101,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP10: Frontend Timesheets UI
 **Goal**: UI for logging and viewing timesheets.
 **Independent Test**: Employee can log hours using a form.
-- [ ] T028: Implement Timesheet Entry Form
-- [ ] T029: Implement Timesheet List/View
+- [x] T028: Implement Timesheet Entry Form
+- [x] T029: Implement Timesheet List/View
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP04, WP08
