@@ -1,9 +1,13 @@
 ---
 work_package_id: WP08
 title: Frontend Foundation & Auth
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 79a8093e6c0c555c131ade44156c7ae778b3498f
+created_at: '2026-03-24T09:10:23.258639+00:00'
 subtasks: [T023, T024, T025]
+shell_pid: "1484"
 ---
 
 # WP08: Frontend Foundation & Auth
