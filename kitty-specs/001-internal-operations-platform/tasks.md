@@ -92,8 +92,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP09: Frontend Admin UI
 **Goal**: UI for managing users, roles, and profiles.
 **Independent Test**: Admin can assign a role to a user via the UI.
-- [ ] T026: Implement Users & Roles Management UI
-- [ ] T027: Implement Profile Page
+- [x] T026: Implement Users & Roles Management UI
+- [x] T027: Implement Profile Page
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP02, WP08
