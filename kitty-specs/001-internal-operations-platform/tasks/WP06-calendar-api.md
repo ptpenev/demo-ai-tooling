@@ -1,9 +1,13 @@
 ---
 work_package_id: WP06
 title: Calendar Aggregation API
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 39f5071955c060a53d8ae455e326f360f07bedb1
+created_at: '2026-03-24T08:47:16.279059+00:00'
 subtasks: [T017, T018]
+shell_pid: "21492"
 ---
 
 # WP06: Calendar Aggregation API
