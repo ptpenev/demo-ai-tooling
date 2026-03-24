@@ -110,8 +110,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP11: Frontend Leaves UI
 **Goal**: UI for requesting leave and manager approvals.
 **Independent Test**: Manager can approve a pending leave request via UI.
-- [ ] T030: Implement Leave Request Form
-- [ ] T031: Implement Leave Balances & Approvals View
+- [x] T030: Implement Leave Request Form
+- [x] T031: Implement Leave Balances & Approvals View
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP05, WP08
