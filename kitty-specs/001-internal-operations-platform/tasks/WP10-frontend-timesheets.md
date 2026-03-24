@@ -8,6 +8,7 @@ base_commit: 431b936ab9a50d69577d5d2e7992794d9ef77d8d
 created_at: '2026-03-24T09:32:27.974476+00:00'
 subtasks: [T028, T029]
 shell_pid: "20224"
+agent: "opencode"
 ---
 
 # WP10: Frontend Timesheets UI
@@ -38,3 +39,7 @@ This is a high-traffic area. The forms must be fast, responsive, and easy to use
 
 ## Reviewer Notes
 Ensure that the project dropdown is populated dynamically based on the projects the user is currently assigned to.
+
+## Activity Log
+
+- 2026-03-24T09:32:29Z – opencode – shell_pid=20224 – lane=doing – Assigned agent via workflow command
