@@ -1,9 +1,13 @@
 ---
 work_package_id: WP05
 title: Leaves Backend
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: second-demo-nestjs
+base_commit: 4429350ad4df040fb64bdde3e5596c8c9787cdc5
+created_at: '2026-03-24T08:28:17.189096+00:00'
 subtasks: [T014, T015, T016]
+shell_pid: "21140"
 ---
 
 # WP05: Leaves Backend
