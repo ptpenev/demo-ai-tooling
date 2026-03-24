@@ -71,3 +71,22 @@ export const timesheet_entries = pgTable('timesheet_entries', {
   comment: text('comment'),
   is_approved: boolean('is_approved').default(false).notNull(),
 });
+
+export const leave_types = pgTable('leave_types', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  name: varchar('name', { length: 255 }).notNull(),
+  is_mandatory: boolean('is_mandatory').default(false).notNull(),
+});
+
+export const leave_requests = pgTable('leave_requests', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  user_id: uuid('user_id').references(() => users.id).notNull(),
+  leave_type_id: uuid('leave_type_id').references(() => leave_types.id).notNull(),
+  start_date: date('start_date').notNull(),
+  end_date: date('end_date').notNull(),
+  days: numeric('days', { precision: 5, scale: 2 }).notNull(),
+  status: varchar('status', { length: 50 }).default('pending').notNull(), // pending, approved, rejected
+  approver_id: uuid('approver_id').references(() => users.id),
+  requester_signature: varchar('requester_signature', { length: 255 }),
+  approver_signature: varchar('approver_signature', { length: 255 }),
+});

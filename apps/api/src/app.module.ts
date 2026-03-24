@@ -7,9 +7,10 @@ import { UsersModule } from './users/users.module';
 import { RolesModule } from './roles/roles.module';
 import { ProjectsModule } from './projects/projects.module';
 import { TimesheetsModule } from './timesheets/timesheets.module';
+import { LeavesModule } from './leaves/leaves.module';
 
 @Module({
-  imports: [DbModule, AuthModule, UsersModule, RolesModule, ProjectsModule, TimesheetsModule],
+  imports: [DbModule, AuthModule, UsersModule, RolesModule, ProjectsModule, TimesheetsModule, LeavesModule],
   controllers: [AppController],
   providers: [AppService],
 })
