@@ -128,8 +128,8 @@ This document outlines the work packages for implementing the internal operation
 ### WP13: Frontend Communications UI
 **Goal**: UI for reading announcements and voting on polls.
 **Independent Test**: User can click a poll option and see results.
-- [ ] T034: Implement Announcements Display
-- [ ] T035: Implement Polls Display & Voting UI
+- [x] T034: Implement Announcements Display
+- [x] T035: Implement Polls Display & Voting UI
 **Estimated Size**: ~250 lines
 **Parallel Opportunities**: Yes
 **Dependencies**: WP07, WP08
